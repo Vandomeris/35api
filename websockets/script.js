@@ -3,7 +3,7 @@ const messages = document.getElementById('messages')
 const form = document.getElementById('form')
 const input = document.getElementById('input')
 
-const ws = new WebSocket('ws://localhost:3000')
+const ws = new WebSocket('ws://localhost:4000')
 
 ws.addEventListener('open', () => {
     Status.textContent = 'ONLINE'

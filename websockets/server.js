@@ -1,6 +1,7 @@
 const ws = require('ws')
+const port = process.env.PORT || 4000
 
-const server = new ws.Server({ port: 3000 })
+const server = new ws.Server({ port: port })
 
 server.on('connection', (connect) => {
 
